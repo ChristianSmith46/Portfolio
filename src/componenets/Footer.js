@@ -13,13 +13,13 @@ function Footer() {
                 <Col md="4">
                     <ul>
                         <li>
-                            <SocialIcon target={'_blank'} url="https://github.com/ChristianSmith46" fgColor='#FAF0CA' bgColor='#EE964B'/>
+                            <SocialIcon target={'_blank'} url="https://github.com/ChristianSmith46" fgColor='#FAF0CA' bgColor='#EE964B' style={{ height: 25, width: 25 }}/>
                         </li>
                         <li>
-                            <SocialIcon target={'_blank'} url="https://www.linkedin.com/in/christian-smith-80b4a3243/" fgColor='#FAF0CA' bgColor='#EE964B'/>
+                            <SocialIcon target={'_blank'} url="https://www.linkedin.com/in/christian-smith-80b4a3243/" fgColor='#FAF0CA' bgColor='#EE964B' style={{ height: 25, width: 25 }}/>
                         </li>
                         <li>
-                            <SocialIcon target={'_blank'} url="https://twitter.com/CSmithTech46" fgColor='#FAF0CA' bgColor='#EE964B'/>
+                            <SocialIcon target={'_blank'} url="https://twitter.com/CSmithTech46" fgColor='#FAF0CA' bgColor='#EE964B' style={{ height: 25, width: 25 }}/>
                         </li>
                     </ul>
                 </Col>
