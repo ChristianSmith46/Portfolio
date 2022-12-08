@@ -3,7 +3,7 @@ import { Navbar, Nav } from "react-bootstrap";
 function NavBar({ pageChangeHandler, currentPage }) {
 
     return (
-        <Navbar collapseOnSelect expand="md" variant="dark" style={{backgroundColor: '#0D3B66', color: '#FAF0CA'}}>
+        <Navbar collapseOnSelect expand="md" variant="dark">
             <Navbar.Brand>Christian Smith</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">

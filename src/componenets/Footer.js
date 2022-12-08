@@ -5,10 +5,10 @@ import { SocialIcon } from 'react-social-icons';
 
 function Footer() {
     return (
-        <div style={{ position: "fixed", bottom: 0, backgroundColor: "#0D3B66", width: '100%'}}>
+        <footer>
             <Row>
-                <Col md="8">
-                    <h3 style={{color: '#FAF0CA'}}>Website created by Christian Smith</h3>
+                <Col md="8" id="signature">
+                    <h3>Website created by Christian Smith</h3>
                 </Col>
                 <Col md="4">
                     <ul>
@@ -24,7 +24,7 @@ function Footer() {
                     </ul>
                 </Col>
             </Row>
-        </div>
+        </footer>
     );
 }
 

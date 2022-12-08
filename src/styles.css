@@ -1,0 +1,39 @@
+nav {
+    background-color: #0D3B66;
+}
+
+.navbar-brand {
+    color: #FAF0CA;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #0D3B66;
+    width: 100%;
+    text-align: center;
+}
+
+footer h3{
+    color: #FAF0CA;
+    vertical-align: middle;
+    line-height: 50px;
+    margin-bottom: 0;
+}
+
+footer ul {
+    margin-bottom: 0;
+    list-style-type: none;
+}
+footer ul li {
+    margin-top: 2.625px;
+}
+
+@media (min-width: 768px){
+    footer h3 {
+        line-height: 90px;
+    }
+    footer ul {
+        text-align: start;
+    }
+}
