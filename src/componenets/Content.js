@@ -10,7 +10,7 @@ function Content() {
     const [currentPage, setCurrentPage] = useState('AboutMe');
 
     const renderCurrentPage = () => {
-        switch(currentPage){
+        switch (currentPage) {
             case 'Contact': {
                 return <Contact />;
             }
@@ -31,7 +31,9 @@ function Content() {
     return (
         <div>
             <NavBar currentPage={currentPage} pageChangeHandler={pageChangeHandler} />
-            {renderCurrentPage()}
+            <main>
+                {renderCurrentPage()}
+            </main>
             <Footer />
         </div>
     );
