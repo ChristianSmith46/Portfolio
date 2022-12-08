@@ -4,6 +4,7 @@ nav {
 
 .navbar-brand {
     color: #FAF0CA;
+    margin-left: 16px;
 }
 
 footer {
@@ -22,11 +23,14 @@ footer h3{
 }
 
 footer ul {
-    margin-bottom: 0;
+    margin-bottom: 5px;
     list-style-type: none;
+    padding-left: 0;
 }
 footer ul li {
     margin-top: 2.625px;
+    display: inline;
+    padding-right: 5px;
 }
 
 footer a::before {
@@ -53,5 +57,7 @@ footer a:hover::before {
     }
     footer ul {
         text-align: start;
+        margin-top: 31.75px;
+        margin-bottom: 31.75px;
     }
 }
