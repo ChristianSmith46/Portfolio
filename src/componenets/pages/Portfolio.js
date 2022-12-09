@@ -1,4 +1,6 @@
-import { Card, Row, Container } from 'react-bootstrap';
+import { Row, Container } from 'react-bootstrap';
+
+import Project from '../Project';
 
 
 const projects = [
@@ -51,23 +53,7 @@ function Portfolio() {
         <Container>
             <h1 className='text-center'>Projects</h1>
             <Row className='justify-content-center'>
-                {projects.map((project) => {
-                    return (
-                        <Card md={4} border="dark" key={project.name} style={{ width: '18rem' }}>
-                            <Card.Header>{project.name}</Card.Header>
-                            <Card.Img variant="top" src={project.imageLink} />
-                            <Card.Body>
-                                <Card.Text>
-                                    {project.description}
-                                </Card.Text>
-                            </Card.Body>
-                            <Card.Footer>
-                                <Card.Link target={"_blank"} href={project.githubLink}>Github Link</Card.Link>
-                                <Card.Link target={"_blank"} href={project.deployedLink}>Deployed Site</Card.Link>
-                            </Card.Footer>
-                        </Card>
-                    )
-                })}
+                {projects.map((project) => <Project key={project.name} project={project}/>)}
             </Row>
         </Container>
     )
