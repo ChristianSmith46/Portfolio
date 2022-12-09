@@ -49,6 +49,7 @@ const projects = [
 function Portfolio() {
     return (
         <Container>
+            <h1 className='text-center'>Projects</h1>
             <Row className='justify-content-center'>
                 {projects.map((project) => {
                     return (

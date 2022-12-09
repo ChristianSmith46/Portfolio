@@ -7,7 +7,12 @@ nav {
     margin-left: 16px;
 }
 
+main {
+    padding-bottom: 90px;
+}
+
 footer {
+    position: fixed;
     bottom: 0;
     background-color: #0D3B66;
     width: 100%;
