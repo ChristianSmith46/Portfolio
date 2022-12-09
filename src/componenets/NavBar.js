@@ -1,5 +1,6 @@
 import { Navbar, Nav } from "react-bootstrap";
-import { useState } from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom'
 
 function NavBar({ pageChangeHandler, currentPage }) {
 
@@ -11,10 +12,10 @@ function NavBar({ pageChangeHandler, currentPage }) {
             <Navbar.Toggle onClick={() => setExpanded(expanded ? false : "expanded")} aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
                 <Nav onClick={() => setExpanded(false)}>
-                    <Nav.Link onClick={() => pageChangeHandler('AboutMe')} className={currentPage === 'AboutMe' ? 'active' : ''}>About</Nav.Link>
-                    <Nav.Link onClick={() => pageChangeHandler('Portfolio')} className={currentPage === 'Portfolio' ? 'active' : ''}>Portfolio</Nav.Link>
-                    <Nav.Link onClick={() => pageChangeHandler('Contact')} className={currentPage === 'Contact' ? 'active' : ''}>Contact</Nav.Link>
-                    <Nav.Link onClick={() => pageChangeHandler('Resume')} className={currentPage === 'Resume' ? 'active' : ''}>Resume</Nav.Link>
+                    <Nav.Link as={Link} to="/about" onClick={() => pageChangeHandler('AboutMe')} className={currentPage === 'AboutMe' ? 'active' : ''}>About</Nav.Link>
+                    <Nav.Link as={Link} to="/portfolio" onClick={() => pageChangeHandler('Portfolio')} className={currentPage === 'Portfolio' ? 'active' : ''}>Portfolio</Nav.Link>
+                    <Nav.Link as={Link} to="/contact" onClick={() => pageChangeHandler('Contact')} className={currentPage === 'Contact' ? 'active' : ''}>Contact</Nav.Link>
+                    <Nav.Link as={Link} to="/resume" onClick={() => pageChangeHandler('Resume')} className={currentPage === 'Resume' ? 'active' : ''}>Resume</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

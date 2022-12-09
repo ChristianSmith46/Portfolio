@@ -5,37 +5,44 @@ import AboutMe from './pages/AboutMe';
 import Contact from './pages/Contact';
 import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function Content() {
-    const [currentPage, setCurrentPage] = useState('AboutMe');
-
-    const renderCurrentPage = () => {
-        switch (currentPage) {
-            case 'Contact': {
-                return <Contact />;
-            }
-            case 'Portfolio': {
-                return <Portfolio />;
-            }
-            case 'Resume': {
-                return <Resume />;
-            }
-            default: {
-                return <AboutMe />;
-            }
-        }
-    }
+    const [currentPage, setCurrentPage] = useState('');
 
     const pageChangeHandler = (newPage) => setCurrentPage(newPage);
 
     return (
-        <div>
-            <NavBar currentPage={currentPage} pageChangeHandler={pageChangeHandler} />
-            <main>
-                {renderCurrentPage()}
-            </main>
-            <Footer />
-        </div>
+        <Router>
+            <div>
+                <NavBar currentPage={currentPage} pageChangeHandler={pageChangeHandler} />
+                <main>
+                    <Routes>
+                        <Route
+                            path="/about"
+                            element={<AboutMe />}
+                        />
+                        <Route
+                            path="/portfolio"
+                            element={<Portfolio />}
+                        />
+                        <Route
+                            path="/contact"
+                            element={<Contact />}
+                        />
+                        <Route
+                            path="/resume"
+                            element={<Resume />}
+                        />
+                        <Route
+                            path="*"
+                            element={<AboutMe />}
+                        />
+                    </Routes>
+                </main>
+                <Footer />
+            </div>
+        </Router>
     );
 }
 

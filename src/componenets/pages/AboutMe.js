@@ -1,3 +1,4 @@
+import React from 'react';
 import pfp from '../../img/Profile.jpeg'
 import { Container } from 'react-bootstrap'
 
