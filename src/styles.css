@@ -15,8 +15,14 @@ main {
     padding-bottom: 90px;
 }
 
+p {
+    font-size: 19px;
+    font-family: "Lucida Console";
+}
+
 .container h1 {
     color: #849698;
+    font-size: 40px;
 }
 
 footer {
@@ -71,5 +77,8 @@ footer a:hover::before {
         text-align: start;
         margin-top: 31.75px;
         margin-bottom: 31.75px;
+    }
+    p {
+        font-size: 30px;
     }
 }

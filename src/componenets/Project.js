@@ -8,7 +8,7 @@ function Project({project}) {
             <Card.Header>{project.name}</Card.Header>
             <Card.Img variant="top" src={project.imageLink} />
             <Card.Body>
-                <Card.Text>
+                <Card.Text style={{fontSize: 19}}>
                     {project.description}
                 </Card.Text>
             </Card.Body>

@@ -5,12 +5,14 @@ function Resume() {
     return (
         <Container>
             <h1>Resume</h1>
+            <br></br>
             <Button href='https://github.com/ChristianSmith46/Portfolio/raw/main/src/assets/resume2022.pdf'>Download Resume</Button>
+            <br></br><br></br>
             <p></p>
             <Row className='justify-content-center'>
                 <Col>
-                    <h2>Frontend Skills</h2>
-                    <ul>
+                    <h1>Frontend Skills</h1>
+                    <ul style={{fontSize: 30}}>
                         <li>React</li>
                         <li>Bootstrap</li>
                         <li>Handlebars</li>
@@ -18,8 +20,8 @@ function Resume() {
                     </ul>
                 </Col>
                 <Col>
-                    <h2>Backend Skills</h2>
-                    <ul>
+                    <h1>Backend Skills</h1>
+                    <ul style={{fontSize: 30}}>
                         <li>Express.js</li>
                         <li>MonogDb</li>
                         <li>MySQL</li>
