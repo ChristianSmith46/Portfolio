@@ -6,6 +6,13 @@ import Project from '../Project';
 
 const projects = [
     {
+        name: "Tough Decisions",
+        description: "Tough Decisions is a MERN Stack web app game using socket.io to create a multiplayer experience where users can battle it out to determine who has the greatest ideas.",
+        imageLink: "https://user-images.githubusercontent.com/107509704/208547754-32ee16c8-d18a-4fea-8ac8-79ec3257c3a4.png",
+        githubLink: "https://github.com/garrettj94/ToughDecisions",
+        deployedLink: "https://toughdecisions.herokuapp.com/"
+    },
+    {
         name: "Flutter",
         description: "Flutter is a blog project I worked on with a few classmates that is intended to be for other new developers who are learning and want to share what they've learned.",
         imageLink: "https://i.gyazo.com/843db949f3db5599bdfc07d1cd32a3f4.png",
@@ -39,13 +46,6 @@ const projects = [
         imageLink: "https://i.gyazo.com/00788801298279c1cbce4940d8b0ae70.png",
         githubLink: "https://github.com/ChristianSmith46/Timed-Quiz-App",
         deployedLink: "https://christiansmith46.github.io/Timed-Quiz-App/"
-    },
-    {
-        name: "Horiseon",
-        description: "Horiseon is an example front end for a company that would work on search engine optimization",
-        imageLink: "https://i.gyazo.com/5304c6b1fea5cf20e1c0ee463db9996d.jpg",
-        githubLink: "https://github.com/ChristianSmith46/Horiseon-Website",
-        deployedLink: "https://christiansmith46.github.io/Horiseon-Website"
     }
 ]
 
