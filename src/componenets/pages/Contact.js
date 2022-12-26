@@ -37,6 +37,7 @@ function Contact() {
     return (
         <Container>
             <h1>Contact</h1>
+            <p style={{fontSize: 15}}>You can contact me directly through email at <a href='mailto:christian.46.smith@gmail.com'>christian.46.smith@gmail.com</a> or fill out the contact form below</p>
             <form
                 className="flex-row justify-center justify-space-between-md align-center"
                 onSubmit={handleFormSubmit}
