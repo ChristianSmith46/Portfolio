@@ -17,7 +17,7 @@ const projects = [
         description: "Flutter is a blog project I worked on with a few classmates that is intended to be for other new developers who are learning and want to share what they've learned.",
         imageLink: "https://i.gyazo.com/843db949f3db5599bdfc07d1cd32a3f4.png",
         githubLink: "https://github.com/ChristianSmith46/Flutter",
-        deployedLink: "https://safe-reaches-80052.herokuapp.com/"
+        deployedLink: "https://flutter.herokuapp.com/"
     },
     {
         name: "Sportcast",
