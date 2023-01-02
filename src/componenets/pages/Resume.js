@@ -6,7 +6,7 @@ function Resume() {
         <Container>
             <h1>Resume</h1>
             <br></br>
-            <Button href='https://github.com/ChristianSmith46/Portfolio/raw/main/src/assets/resume2022.pdf'>Download Resume</Button>
+            <Button href='https://github.com/ChristianSmith46/Portfolio/raw/main/src/assets/ChristianSmithResume.pdf'>Download Resume</Button>
             <br></br><br></br>
             <p></p>
             <Row className='justify-content-center'>
