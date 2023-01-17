@@ -6,7 +6,7 @@ function Project({project}) {
     return (
         <Card md={4} border="dark" key={project.name} style={{ width: '18rem' }}>
             <Card.Header>{project.name}</Card.Header>
-            <Card.Img variant="top" src={project.imageLink} />
+            <Card.Img alt={project.name} variant="top" src={project.imageLink} />
             <Card.Body>
                 <Card.Text style={{fontSize: 19}}>
                     {project.description}
