@@ -15,20 +15,37 @@ function Contact() {
         return re.test(String(email).toLowerCase());
     }
 
-    const handleFormSubmit = (e) => {
+    const handleFormSubmit = async (e) => {
         e.preventDefault();
-        setRequiredField({name, email, message});
+        setRequiredField({ name, email, message });
 
         if (!validateEmail(email)) {
             setError(true);
             setResponse(false);
 
         } else {
+            await fetch('https://discord.com/api/webhooks/1071287825607163954/ZsyYjOD-5tuxt90uoxXTH_p1QE4-ipRD8lgheeCdCYe_-7wslL0bkKq360CVwUffdzJR', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    "embeds": [{
+                        "author": {
+                            "name": name
+                        },
+                        "footer": {
+                            "text": email
+                        },
+                        "description": message
+                    }]
+                })
+            });
             setError(false);
             setName("");
             setEmail("");
             setMessage("");
-            setRequiredField({name, email, message});
+            setRequiredField({ name, email, message });
             setResponse(true);
         }
 
@@ -37,26 +54,26 @@ function Contact() {
     return (
         <Container>
             <h1>Contact</h1>
-            <p style={{fontSize: 15}}>You can contact me directly through email at <a href='mailto:christian.46.smith@gmail.com'>christian.46.smith@gmail.com</a> or fill out the contact form below</p>
+            <p style={{ fontSize: 15 }}>You can contact me directly through email at <a href='mailto:christian.46.smith@gmail.com'>christian.46.smith@gmail.com</a> or fill out the contact form below</p>
             <form
                 className="flex-row justify-center justify-space-between-md align-center"
                 onSubmit={handleFormSubmit}
             >
                 <div className="col-12 col-lg-9">
-                    <label>Name: {requiredField.name === "" && <span style={{color: "red"}}>*Required Field</span>}</label>
+                    <label>Name: {requiredField.name === "" && <span style={{ color: "red" }}>*Required Field</span>}</label>
                     <input
                         value={name}
                         className="form-input w-100"
                         onChange={(event) => setName(event.target.value)}
                     />
-                    <label>Email: {requiredField.email === "" && <span style={{color: "red"}}>*Required Field</span>}</label>
+                    <label>Email: {requiredField.email === "" && <span style={{ color: "red" }}>*Required Field</span>}</label>
                     <input
                         value={email}
                         className="form-input w-100"
                         onBlur={() => setError(!validateEmail(email))}
                         onChange={(event) => setEmail(event.target.value)}
                     />
-                    <label>Message: {requiredField.message === "" && <span style={{color: "red"}}>*Required Field</span>}</label>
+                    <label>Message: {requiredField.message === "" && <span style={{ color: "red" }}>*Required Field</span>}</label>
                     <textarea
                         rows="4"
                         value={message}
