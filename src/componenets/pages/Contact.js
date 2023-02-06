@@ -24,7 +24,8 @@ function Contact() {
             setResponse(false);
 
         } else {
-            await fetch('https://discord.com/api/webhooks/1071287825607163954/ZsyYjOD-5tuxt90uoxXTH_p1QE4-ipRD8lgheeCdCYe_-7wslL0bkKq360CVwUffdzJR', {
+            try{
+                await fetch('https://discord.com/api/webhooks/1071287825607163954/ZsyYjOD-5tuxt90uoxXTH_p1QE4-ipRD8lgheeCdCYe_-7wslL0bkKq360CVwUffdzJR', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -47,6 +48,9 @@ function Contact() {
             setMessage("");
             setRequiredField({ name, email, message });
             setResponse(true);
+            } catch (error) {
+                console.error(error);
+            }
         }
 
     }
