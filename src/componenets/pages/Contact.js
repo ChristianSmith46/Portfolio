@@ -25,22 +25,13 @@ function Contact() {
 
         } else {
             try{
-                await fetch('https://discord.com/api/webhooks/1071287825607163954/ZsyYjOD-5tuxt90uoxXTH_p1QE4-ipRD8lgheeCdCYe_-7wslL0bkKq360CVwUffdzJR', {
+                await fetch('https://9e3xroamk5.execute-api.us-east-1.amazonaws.com/portfolio/contact', {
                 method: 'POST',
+                mode: 'no-cors',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({
-                    "embeds": [{
-                        "author": {
-                            "name": name
-                        },
-                        "footer": {
-                            "text": email
-                        },
-                        "description": message
-                    }]
-                })
+                body: JSON.stringify({name, email, message})
             });
             setError(false);
             setName("");
