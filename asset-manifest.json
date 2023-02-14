@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.95e5571e.css",
-    "main.js": "/Portfolio/static/js/main.676cb7c5.js",
+    "main.css": "/Portfolio/static/css/main.bdfd7e52.css",
+    "main.js": "/Portfolio/static/js/main.37c52d0a.js",
     "static/media/Profile.jpeg": "/Portfolio/static/media/Profile.3cc510a868ef1bbcd5b9.jpeg",
+    "static/media/ChristianSmithResume2023.pdf": "/Portfolio/static/media/ChristianSmithResume2023.67699858cca31e5274a7.pdf",
     "index.html": "/Portfolio/index.html",
-    "main.95e5571e.css.map": "/Portfolio/static/css/main.95e5571e.css.map",
-    "main.676cb7c5.js.map": "/Portfolio/static/js/main.676cb7c5.js.map"
+    "main.bdfd7e52.css.map": "/Portfolio/static/css/main.bdfd7e52.css.map",
+    "main.37c52d0a.js.map": "/Portfolio/static/js/main.37c52d0a.js.map"
   },
   "entrypoints": [
-    "static/css/main.95e5571e.css",
-    "static/js/main.676cb7c5.js"
+    "static/css/main.bdfd7e52.css",
+    "static/js/main.37c52d0a.js"
   ]
 }
