@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://christiansmith46.github.io/Portfolio/",
+  "homepage": "https://www.christiansmith.dev/",
   "private": true,
   "dependencies": {
     "@react-pdf-viewer/core": "^3.11.0",
