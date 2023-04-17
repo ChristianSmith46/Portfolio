@@ -5,9 +5,10 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import { Worker } from '@react-pdf-viewer/core';
 import packageJson from '../package.json';
 
-const pdfjsVersion = packageJson.dependencies['pdfjs-dist'];
+const pdfjsVersion = packageJson.dependencies['pdfjs-dist'].slice(1);
 
 function App() {
+    console.log(pdfjsVersion);
     return (
         <Worker workerUrl={`https://unpkg.com/pdfjs-dist@${pdfjsVersion}/build/pdf.worker.min.js`}>
             <Content />
